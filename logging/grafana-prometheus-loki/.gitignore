@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+*.swp
+
+# Environment Variables (Keep your secrets secret!)
+.env
+.env.*
+!.env.example
+
+# Infrastructure Data (Ignore local DB/Log storage)
+infra/grafana/data/
+infra/prometheus/data/
+infra/otel/data/
+# If you have a local Loki data folder, ignore it here:
+*loki_data/
+*.r.gz
+*.log
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS
+.DS_Store
+Thumbs.db

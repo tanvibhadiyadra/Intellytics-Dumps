@@ -1,0 +1,8 @@
+pip install fastapi-azure-auth
+
+fastapi
+uvicorn
+fastapi-sso
+python-dotenv
+httpx
+itsdangerous

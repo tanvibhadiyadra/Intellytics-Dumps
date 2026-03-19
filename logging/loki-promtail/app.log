@@ -1,0 +1,30 @@
+2026-03-05 14:33:35,350 - ERROR - Simulated database connection failure
+2026-03-05 14:34:06,075 - ERROR - Simulated database connection failure
+2026-03-05 14:34:40,687 - INFO - Processing request 0
+2026-03-05 14:34:40,687 - WARNING - High response time detected 0
+2026-03-05 14:34:40,687 - ERROR - Database timeout at request 0
+2026-03-05 14:34:40,888 - INFO - Processing request 1
+2026-03-05 14:34:41,088 - INFO - Processing request 2
+2026-03-05 14:34:41,289 - INFO - Processing request 3
+2026-03-05 14:34:41,489 - INFO - Processing request 4
+2026-03-05 14:34:41,690 - INFO - Processing request 5
+2026-03-05 14:34:41,690 - WARNING - High response time detected 5
+2026-03-05 14:34:41,891 - INFO - Processing request 6
+2026-03-05 14:34:42,092 - INFO - Processing request 7
+2026-03-05 14:34:42,092 - ERROR - Database timeout at request 7
+2026-03-05 14:34:42,292 - INFO - Processing request 8
+2026-03-05 14:34:42,493 - INFO - Processing request 9
+2026-03-05 14:34:42,693 - INFO - Processing request 10
+2026-03-05 14:34:42,693 - WARNING - High response time detected 10
+2026-03-05 14:34:42,894 - INFO - Processing request 11
+2026-03-05 14:34:43,095 - INFO - Processing request 12
+2026-03-05 14:34:43,295 - INFO - Processing request 13
+2026-03-05 14:34:43,496 - INFO - Processing request 14
+2026-03-05 14:34:43,496 - ERROR - Database timeout at request 14
+2026-03-05 14:34:43,696 - INFO - Processing request 15
+2026-03-05 14:34:43,697 - WARNING - High response time detected 15
+2026-03-05 14:34:43,897 - INFO - Processing request 16
+2026-03-05 14:34:44,098 - INFO - Processing request 17
+2026-03-05 14:34:44,298 - INFO - Processing request 18
+2026-03-05 14:34:44,499 - INFO - Processing request 19
+2026-03-05 14:35:32,968 - INFO - Home endpoint accessed

@@ -1,0 +1,54 @@
+services:
+
+  loki:
+    image: grafana/loki:2.9.3
+    container_name: loki
+    command: -config.file=/etc/loki/local-config.yaml
+    ports:
+      - "3100:3100"
+    volumes:
+      - loki_data:/loki
+    networks:
+      - obs
+
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.93.0
+    container_name: otel-collector
+    command: ["--config=/etc/otel/config.yaml"]
+    volumes:
+      - ./config:/etc/otel
+    ports:
+      - "4320:4318"
+    depends_on:
+      - loki
+    networks:
+      - obs
+
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+    volumes:
+      - ./grafana_poc/config/grafana/provisioning:/etc/grafana/provisioning
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - loki
+    networks:
+      - obs
+
+
+networks:
+  obs:
+    driver: bridge
+
+
+volumes:
+  loki_data:
+  grafana_data:
